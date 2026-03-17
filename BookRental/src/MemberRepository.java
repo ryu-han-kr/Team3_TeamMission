@@ -7,8 +7,8 @@ public class MemberRepository {
     public void add(String name, String phone) {
         String sql = "INSERT INTO member (name, phone) VALUES (?,?)";
         try(
-            Connection conn = DBUtil.getConnection();
-            PreparedStatement pstmt = conn.prepareStatement(sql);
+                Connection conn = DBUtil.getConnection();
+                PreparedStatement pstmt = conn.prepareStatement(sql);
             )
         {
             pstmt.setString(1, name);

@@ -3,7 +3,7 @@ import java.sql.*;
 public class ComicRepository {
     private Connection conn;
     private PreparedStatement pstmt;
-    public void add(String title, String author, Integer volume) {
+    public void add(String title, String author, int volume) {
         // Scanner로 제목, 작가 입력받기
         String sql = "INSERT INTO comic (title, author, volume) VALUES (?,?,?)";
         try (
