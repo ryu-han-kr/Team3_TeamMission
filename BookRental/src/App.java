@@ -17,7 +17,7 @@ public class App {
                 case "comic_add":
                     System.out.println("책 이름: "); String title = sc.nextLine();
                     System.out.println("작가: "); String author = sc.nextLine();
-                    System.out.println("작가: "); int volume = Integer.parseInt(sc.nextLine());
+                    System.out.println("분량: "); int volume = Integer.parseInt(sc.nextLine());
                     comicRepository.add(title, author, volume);
                     break;
                 case "comic_list": comicRepository.list(); break;
