@@ -6,7 +6,7 @@ public class DBUtil {
 
 	private static String url = "jdbc:mysql://localhost:3306/teamproject?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
 	private static String user = "root";
-	private static String password = "1018"; // 팀원들에게 각자 수정하라고 안내하세요.
+	private static String password = "0000"; // 팀원들에게 각자 수정하라고 안내하세요.
 
 	public static Connection getConnection() {
 		Connection conn = null;
